@@ -169,13 +169,6 @@ export class App extends LitElement {
         this.isStartedApp = true;
     }
 
-    firstUpdated() {
-        this._getConsultApi(this.url, this.method);
-        this.isStartedApp = true;
-        this._openModal(1)
-
-    }
-
     onCardClick(e) {
         //Abrimos el modal
         this._openModal(e.detail)
